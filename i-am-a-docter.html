@@ -2,104 +2,151 @@
 <html>
     <head>
         <title> my Medic</title>
+        <link rel="stylesheet" href="./am-a-doctor.css" />
+        <link href="https://fonts.googleapis.com/css?family=Chivo" rel="stylesheet" />
     </head>
     <body>
         <content class="main-content">
-            <div class="top-bar">
+            <div class="top-bar-wrapper">
+                <div class="top-bar">
+                    <div class="logo columns">
+                        <h2><a href="#">myMedic</a></h2>
+                    </div>
+                    <div class="search-area columns">
+                        <img src="images/search.png" />
+                        <input type="search" placeholder="Search for Doctor/Hospital" />
+                    </div>
+                    <div class="user-access columns">
+                        <h3><a>Sign In</a></h3>
+                        <h3><a>Sign Up</a></h3>
+                        <h3><a>Help</a></h3>
+                    </div>
+                </div>
             </div>
-            <div class="banner">
-                <div>
-                    <h2>Get paid to consult with patients in your free time</h2>
-                    <p>myMedic makes it easy and promotes you to a network of patients</p>
-                    <span>
-                        <p> Earn up to </p>
-                        <p> 30,0000 UGX/month </p>
-                        <button>Get Started</button>
-                    </span>
+            <div class="banner-wrapper">
+                <div class="banner">
+                    <div>
+                        <h2>Get paid to consult with patients in your free time</h2>
+                        <p>myMedic makes it easy and promotes you to a network of patients</p>
+                        <span>
+                            <p> Earn up to </p>
+                            <p> 30,0000 UGX/month </p>
+                            <button>Get Started</button>
+                        </span>
+                    </div>
                 </div>
             </div>
             <div class="flexibility">
-                <h2>Flexibility puts you in control</h2>
-                <input type="checkbox" checked=true /> Set your own schedule
-                <input type="checkbox" checked=true /> Set your price
-                <input type="checkbox" checked=true /> Set language proficiency preferred
+                <div class="title">
+                    <h2>Flexibility puts you in control</h2>
+                </div>
+                <div class="flexible-items">
+                    <ul>
+                        <li><input type="checkbox" checked=true /> <label>Set your own schedule </label></li>
+                        <li><input type="checkbox" checked=true /> <label> your price </label></li>
+                        <li><input type="checkbox" checked=true /> <label>Set language proficiency preferred </label></li>
+                    </ul>
+                </div>
             </div>
             <div class="how-it-works">
                 <div class="testimonies">
-                    <div class="doctor-testimony">
-                        <img src="" />
-                        <div class="testimony-text">
-                            <div class="border" />
-                            <div class="text">
-                                <p> I am glad to suppliment my monthly salary with online consultations</p>
-                            </div>
-                            <div class="name">
-                                <p>Gumo.D, Nairobi </p>
-                            </div>
-                        </div>
-                        <div class="testimony-text">
-                            <div class="border" />
-                            <div class="text">
-                                <p> I am glad to suppliment my monthly salary with online consultations</p>
-                            </div>
-                            <div class="name">
-                                <p>Gumo.D, Nairobi </p>
-                            </div>
-                        </div>
-                    </div>
+                    <ul>
+                        <li>
+                                <div class="doctor-image">
+                                    <img src="./images/men.jpg" />
+                                </div>
+                                <div class="testimony-text">
+                                    <div class="border">&nbsp;</div>
+                                    <div class="text">
+                                        <p> I am glad to suppliment my monthly salary with online consultations</p>
+                                    </div>
+                                    <div class="name">
+                                        <p>Gumo.D, Nairobi </p>
+                                    </div>
+                                </div>
+                            </li>
+                        <li>
+                                <div class="doctor-image">
+                                    <img src="./images/lady.jpg" />
+                                </div>
+                                <div class="testimony-text">
+                                    <div class="border">&nbsp;</div>
+                                    <div class="text">
+                                        <p> I am glad to suppliment my monthly salary with online consultations</p>
+                                    </div>
+                                    <div class="name">
+                                        <p>Gumo.D, Nairobi </p>
+                                    </div>
+                                </div>
+                            </li>
+                    </ul>
                 </div>
-                <div class="works">
-                    <div class="numbers">
-                        <div> <p>1</p> </div>
-                        <div class="arrow-1" />
-                        <div> <p>2</p> </div>
-                        <div class="arrow-2" />
-                        <div> <p>3</p> </div>
-                    </div>
-                    <div class="work-steps">
-                        <div class="works-1">
-                            <h3>Create your profile</h3>
-                            <p> We guide you through building a  profile that showcases the information patients care about</p>
+                <div class="works-wrapper">
+                    <div class="works">
+                        <h2>How It Works</h2>
+                        <div class="numbers">
+                            <ul>
+                                <li><div> <p>1</p> </div></li>
+                                <li>
+                                    <div class="arrow-1">
+                                            <img src='./images/arrow.png' />
+                                    </div>
+                                </li>
+                                <li><div> <p>2</p> </div></li>
+                                <li>
+                                    <div class="arrow-2">
+                                        <img src='./images/arrow.png' />
+                                    </div>
+                                </li>
+                                <li><div> <p>3</p></div></li>
+                            </ul>
                         </div>
-                        <div class="works-2">
-                            <h3>Accept Requests</h3>
-                            <p> We guide you through building a  profile that showcases the information patients care about</p>
+                        <div class="work-steps">
+                            <div class="works-1 steps">
+                                <h3>Create your profile</h3>
+                                <p> We guide you through building a  profile that showcases the information patients care about</p>
+                            </div>
+                            <div class="works-2 steps">
+                                <h3>Accept Requests</h3>
+                                <p> We guide you through building a  profile that showcases the information patients care about</p>
+                            </div>
+                            <div class="works-3 steps">
+                                <h3>Get Paid</h3>
+                                <p> We guide you through building a  profile that showcases the information patients care about</p>
+                            </div>
                         </div>
-                        <div class="works-3">
-                            <h3>Get Paid</h3>
-                            <p> We guide you through building a  profile that showcases the information patients care about</p>
+                        <div class="get-started">
+                            <button>Get Started</button>
                         </div>
-                    </div>
-                    <div class="get-started">
-                        <button>Get Started</button>
                     </div>
                 </div>
             </div>
             <div class="my-medic-services">
                 <div class="all-services">
-                    <div class="service-1">
-                        <div class="image"><img src="" alt="service" /></div>
+                    <h2>myMedik Services</h2>
+                    <div class="service-1 services">
+                        <div class="image"><img src="./images/services.png" alt="service" /></div>
                         <div class="service-text">
                             <h2>Consult Online</h2>
                             <p>Talk to verified doctors nationwide instantly at the comfort of your home </p>
                         </div>
                     </div>
-                    <div class="service-2">
-                        <div class="image"><img src="" alt="service" /></div>
+                    <div class="service-2 services">
+                        <div class="image"><img src="./images/services.png" alt="service" /></div>
                         <div class="service-text">
                             <h2>Consult Online</h2>
                             <p>Talk to verified doctors nationwide instantly at the comfort of your home </p>
                         </div>
                     </div>
-                    <div class="service-3">
-                        <div class="image"><img src="" alt="service" /></div>
+                    <div class="service-3 services">
+                        <div class="image"><img src="./images/services.png" alt="service" /></div>
                         <div class="service-text">
                             <h2>Consult Online</h2>
                             <p>Talk to verified doctors nationwide instantly at the comfort of your home </p>
                         </div>
                     </div>
-                    <div class="service-4">
-                        <div class="image"><img src="" alt="service" /></div>
+                    <div class="service-4 services">
+                        <div class="image"><img src="./images/services.png" alt="service" /></div>
                         <div class="service-text">
                             <h2>Consult Online</h2>
                             <p>Talk to verified doctors nationwide instantly at the comfort of your home </p>
@@ -111,7 +158,7 @@
                     <button>Start creating your profile</button>
                 </div>
             </div>
-        </content>>
+        </content>
         <footer class="footer">
             <div class="footer-1">
                 <h2>Learn  More</h2>
