@@ -8,33 +8,14 @@
     width: 100%;
 }
 
+%basic-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
 .all-content {
     width: 700px;
     margin: auto;
-}
-
-.signin-toggle {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #cacaca;
-    padding: 0px 20px;
-
-    h3 {
-        color: #838383;
-        font-size: 20px;
-        font-family: arial;
-    }
-
-    span {
-        display: flex;
-        align-items: center;
-        h4 {
-            margin-right: 10px;
-            font-size: 15px;
-            font-family: arial;
-            color: #9d9d9d;
-        }
-    }
 }
 
 form {
@@ -61,6 +42,51 @@ form {
     }
 }
 
+/*******************************************
+                Log In Section
+*******************************************/
+
+#SignIn {
+    .remember {
+        display: flex;
+        justify-content: space-between;
+    }
+    .or-section {
+        @extend %basic-flex;
+    }
+}
+
+
+/*******************************************
+                Sign Up Section
+*******************************************/
+
+.signin-toggle {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #cacaca;
+    padding: 0px 20px;
+
+    h3 {
+        color: #838383;
+        font-size: 20px;
+        font-family: arial;
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+        h4 {
+            margin-right: 10px;
+            font-size: 15px;
+            font-family: arial;
+            color: #9d9d9d;
+        }
+    }
+}
+
+
+
 
 .tab {
     overflow: hidden;
@@ -81,11 +107,6 @@ form {
     border-bottom: 3px solid transparent;
   }
 
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    // background-color: #ddd;
-  }
-
   /* Create an active/current tablink class */
   .tab button.active {
     border-bottom: 3px solid #00bcff;
@@ -96,6 +117,5 @@ form {
   .tabcontent {
     display: none;
     padding: 6px 12px;
-    // border: 1px solid #ccc;
     border-top: none;
   }

@@ -29,7 +29,6 @@
     <body>
         <content class="main-content">
             <div class="all-content">
-
             <div class="signin-form">
 
                 <div>
@@ -38,17 +37,49 @@
                         <button class="tablinks" onclick="openCity(event, 'SignIn')">Sign In</button>
                         <button class="tablinks" onclick="openCity(event, 'SignUp')">Sign Up</button>
                     </div>
-                    <div class="signin-toggle">
-                        <h3>Join</h3>
-                        <span><h4>Are you a doctor ?</h4> <a href="#">Register Here !</a></span>
-                    </div>
 
                     <!-- Tab content -->
                     <div id="SignIn" class="tabcontent">
-                        <p>This is the Sign In section</p>
+                        <!-- food -->
+                        <form>
+                            <div class="form-item">
+                                <label for="mobile">Mobile Number / Email ID</label>
+                                <input type="text" name="mobile" placeholder="Mobile Number / Email ID" />
+                            </div>
+                            <div class="form-item">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" placeholder="Password" />
+                            </div>
+                            <div class="remember">
+                                <div>
+                                    <input type="checkbox" name="remember" checked="checked" />
+                                    <label for="remember">Remember me for 30days</label>
+                                </div>
+                                <a href='#'>Forgot Password ?</a>
+                            </div>
+
+                            <div class="login">
+                                <button type="submit">Login</button>
+                            </div>
+
+                            <div class="or-section">
+                                <hr>
+                                <div>
+                                    <p>or</p>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="facebook-login">
+                                <button type="submit">Connect with Facebook</button>
+                            </div>
+                        </form>
                     </div>
 
                     <div id="SignUp" class="tabcontent">
+                        <div class="signin-toggle">
+                            <h3>Join</h3>
+                            <span><h4>Are you a doctor ?</h4> <a href="#">Register Here !</a></span>
+                        </div>
                         <form>
                                 <div class="form-item">
                                     <label for="email">Full Name / Email Address</label>
