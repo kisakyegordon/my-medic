@@ -1,0 +1,101 @@
+%blue-button {
+    background: #54b7ff;
+    border: none;
+    padding: 12px 137px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.all-content {
+    width: 700px;
+    margin: auto;
+}
+
+.signin-toggle {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #cacaca;
+    padding: 0px 20px;
+
+    h3 {
+        color: #838383;
+        font-size: 20px;
+        font-family: arial;
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+        h4 {
+            margin-right: 10px;
+            font-size: 15px;
+            font-family: arial;
+            color: #9d9d9d;
+        }
+    }
+}
+
+form {
+    padding: 20px 0px;
+    .form-item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 18px;
+        label {
+            font-family: arial;
+            font-size: 14px;
+            color: #a9a9a9;
+            margin-bottom: 8px;
+        }
+        input {
+            height: 30px;
+        }
+    }
+    button {
+        @extend %blue-button;
+    }
+    .terms {
+        float: right;
+    }
+}
+
+
+.tab {
+    overflow: hidden;
+    border-bottom: 1px solid #cdcdcd4d;
+  }
+
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background: none;
+    color: #838383;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 14px;
+    font-size: 16px;
+    transition: 0.3s;
+    border-bottom: 3px solid transparent;
+  }
+
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    // background-color: #ddd;
+  }
+
+  /* Create an active/current tablink class */
+  .tab button.active {
+    border-bottom: 3px solid #00bcff;
+    color: #00bcff;
+  }
+
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    // border: 1px solid #ccc;
+    border-top: none;
+  }

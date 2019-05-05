@@ -2,48 +2,83 @@
 <html>
     <head>
         <title> my Medic</title>
-        <link rel="stylesheet" href="./sign-up.css" />
+        <link rel="stylesheet" href="./signup.css" />
         <link href="https://fonts.googleapis.com/css?family=Chivo" rel="stylesheet" />
     </head>
+    <script>
+        function openCity(evt, signOption) {
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(signOption).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
     <body>
         <content class="main-content">
-            <div class="signin-toggle">
-                <ul>
-                    <li><a href="#">Sign In</a></li>
-                    <li><a href="#">Sign Up</a></li>
-                </ul>
-            </div>
-            <div class="signin-toggle">
-                <h3>Join</h3>
-                <span><h3>Are you a doctor ?</h3> <a href="#">Register Here !</a></span>
-            </div>
+            <div class="all-content">
+
             <div class="signin-form">
-                <form>
-                    <div>
-                        <label for="email">Full Name / Email Address</label>
-                        <input type="text" name="email" placeholder="Full Name / Email Address" />
+
+                <div>
+                     <!-- Tab links -->
+                    <div class="tab">
+                        <button class="tablinks" onclick="openCity(event, 'SignIn')">Sign In</button>
+                        <button class="tablinks" onclick="openCity(event, 'SignUp')">Sign Up</button>
                     </div>
-                    <div>
-                        <label for="number">Mobile Number</label>
-                        <input type="text" name="number" placeholder="Mobile Number" />
+                    <div class="signin-toggle">
+                        <h3>Join</h3>
+                        <span><h4>Are you a doctor ?</h4> <a href="#">Register Here !</a></span>
                     </div>
-                    <div>
-                        <label for="crpassword">Create Password</label>
-                        <input type="password" name="crpassword" placeholder="Password" />
+
+                    <!-- Tab content -->
+                    <div id="SignIn" class="tabcontent">
+                        <p>This is the Sign In section</p>
                     </div>
-                    <div>
-                        <label for="cmpassword">Create Password</label>
-                        <input type="password" name="cmpassword" placeholder="Password" />
+
+                    <div id="SignUp" class="tabcontent">
+                        <form>
+                                <div class="form-item">
+                                    <label for="email">Full Name / Email Address</label>
+                                    <input type="text" name="email" placeholder="Full Name / Email Address" />
+                                </div>
+                                <div class="form-item">
+                                    <label for="number">Mobile Number</label>
+                                    <input type="text" name="number" placeholder="Mobile Number" />
+                                </div>
+                                <div class="form-item">
+                                    <label for="crpassword">Create Password</label>
+                                    <input type="password" name="crpassword" placeholder="Password" />
+                                </div>
+                                <div class="form-item">
+                                    <label for="cmpassword">Create Password</label>
+                                    <input type="password" name="cmpassword" placeholder="Password" />
+                                </div>
+                                <div>
+                                    <button type="submit">Sign Up</button>
+                                </div>
+                                <div class="terms">
+                                    <p>By signing up i agree to the <a href="#">terms</a></p>
+                                </div>
+                            </form>
                     </div>
-                    <div>
-                        <button type="submit">Sign Up</button>
-                    </div>
-                    <div>
-                        <p>By signing up i agree to the <a href="#">terms</a></p>
-                    </div>
-                </form>
 
                 </div>
+
+                </div>
+            </div>
         </content>
     </body>
 </html>
