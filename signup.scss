@@ -13,6 +13,49 @@
     justify-content: space-between;
 }
 
+%footer-text {
+    font-size: 14px;
+    color: #a8a8a8;
+    text-transform: full-size-kana;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/******************************************
+                Tab Region
+******************************************/
+.tab {
+    border-bottom: 1px solid #cdcdcd4d;
+  }
+  .tab button {
+    background: none;
+    color: #838383;
+    border: none;
+    cursor: pointer;
+    padding: 12px 14px;
+    font-size: 18px;
+    transition: 0.3s;
+    border-bottom: 3px solid transparent;
+  }
+  .tab button.active {
+    border-bottom: 3px solid #00bcff;
+    color: #00bcff;
+  }
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+  }
+
+
+
+
 .all-content {
     width: 700px;
     margin: auto;
@@ -31,7 +74,14 @@ form {
             margin-bottom: 8px;
         }
         input {
-            height: 30px;
+            height: 40px;
+            font-size: 14px;
+            padding: 0px 8px;
+            border: 1px solid #9b9b9b;
+            border-radius: 2px;
+        }
+        input::placeholder {
+            color: #c5c5c5;
         }
     }
     button {
@@ -39,6 +89,12 @@ form {
     }
     .terms {
         float: right;
+        p {
+            @extend %footer-text;
+        }
+        a {
+            color: #00bcff;
+        }
     }
 }
 
@@ -50,9 +106,20 @@ form {
     .remember {
         display: flex;
         justify-content: space-between;
+        label {
+            @extend %footer-text;
+        }
+        a {
+            color: #00bcff;
+            @extend %footer-text;
+        }
     }
     .or-section {
         @extend %basic-flex;
+    }
+
+    .login {
+        margin-top: 60px;
     }
 }
 
@@ -70,7 +137,8 @@ form {
     h3 {
         color: #838383;
         font-size: 20px;
-        font-family: arial;
+        font-family: chivo;
+        font-weight: 100;
     }
 
     span {
@@ -79,43 +147,14 @@ form {
         h4 {
             margin-right: 10px;
             font-size: 15px;
-            font-family: arial;
+            font-family: 'Open Sans', san-serif;
             color: #9d9d9d;
+            font-weight: 100;
+        }
+        a {
+            color: #f39518;
+            font-size: 14px;
+            text-decoration: none;
         }
     }
 }
-
-
-
-
-.tab {
-    overflow: hidden;
-    border-bottom: 1px solid #cdcdcd4d;
-  }
-
-  /* Style the buttons that are used to open the tab content */
-  .tab button {
-    background: none;
-    color: #838383;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 12px 14px;
-    font-size: 16px;
-    transition: 0.3s;
-    border-bottom: 3px solid transparent;
-  }
-
-  /* Create an active/current tablink class */
-  .tab button.active {
-    border-bottom: 3px solid #00bcff;
-    color: #00bcff;
-  }
-
-  /* Style the tab content */
-  .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border-top: none;
-  }
